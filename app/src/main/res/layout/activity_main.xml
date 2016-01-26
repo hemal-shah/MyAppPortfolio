@@ -23,6 +23,9 @@
 
     <include
         android:id="@+id/container_activity_main"
-        layout="@layout/content_main" />
+        layout="@layout/content_main"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </android.support.design.widget.CoordinatorLayout>

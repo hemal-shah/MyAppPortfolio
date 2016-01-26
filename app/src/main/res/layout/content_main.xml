@@ -1,95 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ll_content_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <Space
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_content_main"
         android:layout_width="match_parent"
-        android:layout_height="80dp" />
-
-    <TextView
-        android:id="@+id/tv_content_main"
-        android:text="@string/my_nanodegree_apps"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="30dp" />
-
-    <Button
-        android:id="@+id/bt_content_main_spotify_streamer"
-        android:text="@string/spotify_streamer"
-        android:layout_gravity="center"
-        android:background="@color/udacity_color"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content" />
-
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp" />
-
-    <Button
-        android:id="@+id/bt_content_main_scores_app"
-        android:text="@string/scores_app"
-        android:layout_gravity="center"
-        android:background="@color/udacity_color"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp" />
-
-    <Button
-        android:id="@+id/bt_content_main_library_app"
-        android:text="@string/library_app"
-        android:layout_gravity="center"
-        android:background="@color/udacity_color"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp" />
-
-    <Button
-        android:id="@+id/bt_content_main_build_it_bigger"
         android:layout_height="wrap_content"
-        android:layout_width="200dp"
-        android:layout_gravity="center"
-        android:text="@string/build_it_bigger"
-        android:background="@color/udacity_color"
-        />
+        android:orientation="vertical"
+        android:paddingTop="@dimen/top_padding">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_vertical_margin" />
 
-    <Button
-        android:id="@+id/bt_content_main_xyz_reader"
-        android:layout_gravity="center"
-        android:background="@color/udacity_color"
-        android:text="@string/xyz_reader"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_content_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/my_nanodegree_apps"
+            android:textSize="30sp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_button" />
+
+        <Button
+            android:id="@+id/bt_content_main_spotify_streamer"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/udacity_color"
+            android:onClick="clickOnButton"
+            android:text="@string/spotify_streamer" />
 
 
-    <Button
-        android:id="@+id/bt_content_main_capstone"
-        android:text="@string/capstone_my_own_app"
-        android:background="@color/different_color"
-        android:layout_gravity="center"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content" />
-</LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_button" />
+
+        <Button
+            android:id="@+id/bt_content_main_scores_app"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/udacity_color"
+            android:onClick="clickOnButton"
+            android:text="@string/scores_app" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_button" />
+
+        <Button
+            android:id="@+id/bt_content_main_library_app"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/udacity_color"
+            android:onClick="clickOnButton"
+            android:text="@string/library_app" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_button" />
+
+        <Button
+            android:id="@+id/bt_content_main_build_it_bigger"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/udacity_color"
+            android:onClick="clickOnButton"
+            android:text="@string/build_it_bigger" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_button" />
+
+        <Button
+            android:id="@+id/bt_content_main_xyz_reader"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/udacity_color"
+            android:onClick="clickOnButton"
+            android:text="@string/xyz_reader" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_button" />
+
+
+        <Button
+            android:id="@+id/bt_content_main_capstone"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/different_color"
+            android:onClick="clickOnButton"
+            android:text="@string/capstone_my_own_app" />
+    </LinearLayout>
+</ScrollView>
